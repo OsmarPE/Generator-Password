@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Generator Password</title>
+</head>
+<body class="bg-white h-[100dvh] flex items-center justify-center font-Outfit">
+    <div class="content absolute left-0 top-14 right-0 w-[90%] max-w-[968px] md:text-left text-center mx-auto">
+        <h2 class="content-text uppercase tracking-[4px] text-sm ">Generator</h2>
+        <h1 class="content-title text-red-950 font-bold text-4xl md:text-5xl lg:text-5xl ">Password</h1>
+    </div>
+    <div class="absolute bg-red-500 top-1/2 left-0 bottom-0 right-0 -z-10"></div>
+    <main class="main bg-white  w-[90%] max-w-[480px] p-8 rounded-[10px] shadow-xl">
+            
+        <input class="h-11 px-3 w-full bg-red-50 text-red-500 text-3xl border-red-500 border-[1px] rounded-md placeholder:text-red-500" type="text" name="password" id="password" placeholder="Generate Password" disabled>
+        
+        <form class="form">
+            <div class="form__item mt-4 mb-3 flex items-center justify-between">
+                <label class="block text-red-500 text-sm font-medium" for="range">Character Length</label>
+                <p class="number text-2xl font-bold text-red-500">1</p>
+            </div>
+
+            <div class="form__range relative">
+                <div class="range h-2 w-full cursor-pointer bg-red-100 relative rounded-full ">
+                    <div class="range__process absolute h-full left-0 top-0 rounded-full bg-red-400 z-10 pointer-events-none ">
+                        <div class="range__circle absolute right-0 top-1/2 translate-x-1/4 -translate-y-[50%] w-6 aspect-square bg-red-50 rounded-full" style="box-shadow: 0px 1px 30px 1px rgba(230, 57, 70, 0.38);"></div>
+                    </div>
+                </div>
+                <input class="w-full h-2 absolute opacity-0 top-0 " type="range" name="range" value="1" min="1" max="20"  id="range">
+            </div>
+
+
+            <ul class="form__list my-6" >
+                <li class="form__item mb-2 flex items-center gap-2">
+                    <div class="form__box w-4 h-4 border-red-500 transition-all duration-500 border-[1px] relative">
+                        <input class="absolute cursor-pointer inset-0 opacity-0" type="checkbox" name="uppercase" id="uppercase">
+                        <div class="check-active pointer-events-none absolute inset-0 bg-red-500 grid place-content-center transition-all duration-500"  style="opacity: 0;">
+                            <img class="w-5" src="assets/icons/checkmark-outline.svg" alt="icon-check">
+                        </div>
+                    </div>
+                    <label class="text-red-500" for="uppercase">Include Uppercase Letters</label>
+                </li>
+                <li class="form__item mb-2 flex items-center gap-2">
+                    <div class="form__box w-4 h-4 border-red-500 transition-all duration-500 border-[1px] relative">
+                        <input class="absolute cursor-pointer inset-0 opacity-0" type="checkbox" name="lowercase" id="lowercase">
+                        <div class="check-active pointer-events-none absolute inset-0 bg-red-500 grid place-content-center transition-all duration-500"  style="opacity: 0;">
+                            <img class="w-5" src="assets/icons/checkmark-outline.svg" alt="icon-check">
+                        </div>
+                    </div>
+                    <label class="text-red-500" for="lowercase">Include Lowercase Letters</label>
+                </li>
+                <li class="form__item mb-2 flex items-center gap-2">
+                    <div class="form__box w-4 h-4 border-red-500 transition-all duration-500 border-[1px] relative">
+                        <input class="absolute cursor-pointer inset-0 opacity-0" type="checkbox" name="numbers" id="numbers">
+                        <div class="check-active pointer-events-none absolute inset-0 bg-red-500 grid place-content-center transition-all duration-500"  style="opacity: 0;">
+                            <img class="w-5" src="assets/icons/checkmark-outline.svg" alt="icon-check">
+                        </div>
+                    </div>
+                    <label class="text-red-500" for="numbers">Include Numbers</label>
+                </li>
+                <li class="form__item mb-2 flex items-center gap-2">
+                    <div class="form__box w-4 h-4 border-red-500 transition-all duration-500 border-[1px] relative">
+                        <input class="absolute cursor-pointer inset-0 opacity-0" type="checkbox" name="symbols" id="symbols">
+                        <div class="check-active pointer-events-none absolute inset-0 bg-red-500 grid place-content-center transition-all duration-500"  style="opacity: 0;">
+                            <img class="w-5" src="assets/icons/checkmark-outline.svg" alt="icon-check">
+                        </div>
+                    </div>
+                    <label class="text-red-500" for="symbols">Include Symbols</label>
+                </li>
+            </ul>
+            <input type="submit" class=" block w-full h-12 cursor-pointer rounded-lg font-medium transition-all duration-500 bg-red-500 hover:bg-red-400 text-white" style="box-shadow: 0px 4px 30px 1px rgba(230, 57, 70, 0.44);" value="Generate Password">
+        </form>
+    </main>
+
+</body>
+<script src="App.js"></script>
+</html>
