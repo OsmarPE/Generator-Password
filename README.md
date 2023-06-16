@@ -26,13 +26,13 @@ This project is based on the color red with different variations, adaptable for 
     - Find
     - Filter
 
-**Link:** https://www.figma.com/file/ANkexYJmkH7eyVtD0hzTH9/Password-Generator?type=design&node-id=0%3A1&t=SZ8fl5dz0o0C33pu-1
+> **Link:** https://www.figma.com/file/ANkexYJmkH7eyVtD0hzTH9/Password-Generator?type=design&node-id=0%3A1&t=SZ8fl5dz0o0C33pu-1
 
 ## Views Figma
 ![image](https://github.com/OsmarPE/Generator-Password/assets/81031316/01f21622-cf51-4c9f-8a75-875e7faaa107)
 
 ## Page 
-**Link:** https://spontaneous-zabaione-81a78b.netlify.app/
+> **Link:** https://spontaneous-zabaione-81a78b.netlify.app/
 
 ![image](https://github.com/OsmarPE/Generator-Password/assets/81031316/b5a334b6-9093-4bd0-a38d-91687732bf86)
 
